@@ -19,10 +19,12 @@
   height: 100px;
   z-index: 10;
   background-color: #FFFAFA;
+  box-shadow: 4px 4px 7px #bbbbbb;
 }
 
 .transparant{
   background: none;
+  box-shadow: none;
 }
 
 .links{
