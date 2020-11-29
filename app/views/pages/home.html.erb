@@ -1,6 +1,5 @@
-
 <div class="banner">
-  <div class="nav">
+  <div id="nav" class="sticky transparant">
     <a class="links" href="#">HOME</a>
     <a class="links" href="#">PROJECTS</a>
     <a class="links" href="#">ABOUT ME</a>
@@ -11,10 +10,50 @@
 
     <div class="card-image">
     </div>
-    <div class="card">
-
+    <div class="card-text">
+      <h1>Hi there!<br>I'm Brent<br>I'm a developer<br><br> Welcome to my<br> personal portfolio</h1>
     </div>
 
   </div>
 
 </div>
+
+<div class="projects">
+  <h1 class="text">PROJECTS</h1>
+  <div class="cards">
+    <div class="card1">
+      <h1 class="project1">Pokémon</h1>
+
+    </div>
+    <div class="card2">
+      <h1 class="project2">It's a date</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="about_me">
+  <h1 class="text">ABOUT ME</h1>
+</div>
+
+<div class="contact">
+  <h1 class="text">CONTACT</h1>
+</div>
+
+
+  <script>// When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("nav");
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > 0) {
+      navbar.classList.remove("transparant")
+    } else {
+      navbar.classList.add("transparant");
+    }
+  }
+  </script>
+
