@@ -1,0 +1,33 @@
+.projects{
+  width: 100%;
+  background-color: #FFFAFA;
+  height: 600px;
+  position: relative;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.card1{
+  //position: absolute;
+  width: 350px;
+  height: 400px;
+  //right: 60px;
+  //top: 70px;
+  background-color: #f2dcbb;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.card2{
+  //position: absolute;
+  width: 350px;
+  height: 400px;
+  //left: 60px;
+  //top: 70px;
+  background-color: #f2dcbb;
+  border-radius: 10px;
+}

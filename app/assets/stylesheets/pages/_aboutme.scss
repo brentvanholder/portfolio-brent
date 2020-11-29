@@ -1,0 +1,27 @@
+.about_me{
+  width: 100%;
+  background-color: #f2dcbb;
+  height: 600px;
+  position: relative;
+}
+
+.card-photo{
+  background-image: url('FOTO.jpg');
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  left: 350px;
+  top: 70px;
+  border-radius: 10px;
+}
+
+.text-about{
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  right: 350px;
+  top: 70px;
+  border-radius: 10px;
+}
