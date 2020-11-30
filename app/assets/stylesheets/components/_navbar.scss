@@ -10,3 +10,36 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+
+// Self-made navbar
+#nav{
+  justify-content: space-evenly;
+  padding: 60px;
+  display: flex;
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  background-color: #FFFAFA;
+  box-shadow: 4px 4px 7px #bbbbbb;
+}
+
+.transparant{
+  background: none;
+  box-shadow: none;
+}
+
+.links{
+  color: #393e46;
+  position: relative;
+  &:hover{
+    color: black;
+    text-decoration: none;
+  }
+}

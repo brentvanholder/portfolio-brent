@@ -2,12 +2,13 @@
   <div id="nav" class="sticky transparant">
     <a class="links" href="#">HOME</a>
     <a class="links" href="#">PROJECTS</a>
-    <a class="links" href="#">ABOUT ME</a>
+    <a class="links" href="#ABOUTME">ABOUT ME</a>
+    <a class="links" href="#EXPERIENCES">EXPERIENCES</a>
+
     <a class="links" href="#">CONTACT</a>
   </div>
 
   <div class="cards">
-
     <div class="card-image">
     </div>
     <div class="card-text">
@@ -30,15 +31,118 @@
     </div>
   </div>
 </div>
+<!-- Photo gallery of my interests -->
+<section class="py-md-5 border-bottom">
+  <div class="container about" id="ABOUTME">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center"></div>
+      <h1 class="display-2">One Human Being. Different Interests </h1>
+      <p class="lead text-muted mb-5 mb-md-5">Our focus is always on finding the best people to work with. Our bar is <br> high, but you look ready to take on the challenge.</p>
+    </div>
+    <div class="row">
+      <div class="col-12">
 
+        <!-- Image -->
+        <div class="form-row">
+          <div class="col-4">
+            <%= image_tag "https://landkit.goodthemes.co/assets/img/photos/photo-16.jpg", class:"img-fluid rounded shadow-lg" %>
+          </div>
+          <div class="col-3">
 
-<div class="about_me">
-  <h1 class="text">ABOUT ME</h1>
+            <%= image_tag "https://landkit.goodthemes.co/assets/img/photos/photo-17.jpg", class:"img-fluid rounded shadow-lg mb-4" %>
+
+            <%= image_tag "https://landkit.goodthemes.co/assets/img/photos/photo-18.jpg", class:"img-fluid rounded shadow-lg mt-1" %>
+
+          </div>
+          <div class="col-5">
+
+            <div class="form-row mb-4">
+              <div class="col-5">
+
+                <%= image_tag "https://landkit.goodthemes.co/assets/img/photos/photo-19.jpg", class:"img-fluid rounded shadow-lg" %>
+
+              </div>
+              <div class="col-7">
+
+                <%= image_tag "https://landkit.goodthemes.co/assets/img/photos/photo-20.jpg", class:"img-fluid rounded shadow-lg" %>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <%= image_tag "https://landkit.goodthemes.co/assets/img/photos/photo-21.jpg", class:"img-fluid rounded shadow-lg mt-1" %>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="experiences" id="EXPERIENCES">
+  <h1 class="text">EXPERIENCES</h1>
 </div>
 
-<div class="contact">
-  <h1 class="text">CONTACT</h1>
+
+<!-- Insert map and info about Amsterdam -->
+<div class="container">
+  <div class="row">
+    <div id="map"
+      style="width: 50%; height: 400px;"
+      data-markers="<%= @marker.to_json %>"
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+
+    <div class= "col-12 col-md-6 col-lg-5 amsterdam">
+      <h2>Located in Amsterdam
+        <br>
+        <span class="text-success">Enjoy
+          <span data-toggle="typed" data-options="{"strings": ["cultural diversity", "white sand beaches", "sunny weekends"]}"></span>
+        </span>
+      </h2>
+      <p class="font-size-lg text-gray-700 mb-6">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum autem inventore aspernatur doloremque ducimus porro facere distinctio blanditiis illo earum!
+      </p>
+      <div class="d-flex">
+
+        <div class="pr-5">
+          <h4 class="text-success mb-0">
+            <p>100%</p>
+          </h4>
+          <p class="text-gray-700 mb-0">Approval</p>
+        </div>
+        <div class="border-left border-gray-300"></div>
+
+        <div class="px-5">
+          <h4 class="text-success mb-0">
+            <p>100%</p>
+          </h4>
+          <p class="text-gray-700 mb-0">Rainy Days</p>
+        </div>
+        <div class="border-left border-gray-300"></div>
+
+        <div class="pl-5">
+          <h4 class="text-success mb-0">
+            <p>100%</p>
+          </h4>
+          <p class="text-gray-700 mb-0">Rainy Days</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <script>// When the user scrolls the page, execute myFunction
@@ -55,5 +159,5 @@
       navbar.classList.add("transparant");
     }
   }
-  </script>
+</script>
 
