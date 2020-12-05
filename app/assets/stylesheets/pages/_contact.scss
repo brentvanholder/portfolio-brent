@@ -1,36 +1,41 @@
-.contact{
+.container{
+  margin-top: 70px;
+}
+
+.card-contact{
+  height: 200px;
   width: 100%;
-  background-color: #f2dcbb;
-  height: 600px;
-  position: relative;
-}
-
-
-.text-success {
-    color: #42ba96!important;
-}
-
-.text-gray-700 {
-    color: #506690!important;
-}
-
-.border-left {
-    border-left: 1px solid #f1f4f8!important;
-}
-
-.border-gray-300 {
-    border-color: #d9e2ef!important;
-}
-
-.font-size-lg {
-    font-size: 1.1875rem!important;
-}
-
-#map{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 40px 20px;
   border-radius: 10px;
 }
 
-.amsterdam{
-  margin-left: auto;
+
+.contact-text{
   margin-top: 50px;
 }
+
+.fas.fa-envelope{
+  color:#42ba96;
+  margin-bottom: 10px;
+}
+
+.fas.fa-phone{
+  color:#42ba96;
+  margin-bottom: 10px;
+}
+
+.fa-linkedin{
+  color:#42ba96;
+}
+
+.fa-github-square{
+  color:#42ba96;
+}
+
+.icon{
+  &:hover{
+  text-decoration: none;
+  }
+}
+
