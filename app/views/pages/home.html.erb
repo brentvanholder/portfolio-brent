@@ -10,10 +10,11 @@
 
   <div class="cards">
     <div class="card-image">
+      <%= image_tag('brenticon.png') %>
     </div>
     <div class="card-text">
-      <h1> Hi, I am Brent, full stack developer.</h1>
-      <h4>Front End Developer / Back End Developer</h4>
+      <h1> Hi, <br>I am Brent,<br> full stack developer.</h1>
+      <h5>Front End Developer / Back End Developer</h5>
     </div>
   </div>
 
@@ -40,53 +41,54 @@
 
 <!-- Insert map and info about Amsterdam -->
 <div class="container">
+  <h1 class="mb-5">A little bit more about myself</h1>
+
   <div class="row shadow">
     <div id="map"
     style="width: 50%; height: 400px;"
     data-markers="<%= @marker.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-  </div>
+    </div>
 
-  <div class= "col-12 col-md-6 col-lg-5 amsterdam">
-    <h2>Located in Amsterdam
-      <br>
-        <span data-toggle="typed" data-options="{"strings": ["cultural diversity", "white sand beaches", "sunny weekends"]}"></span>
-    </h2>
-    <p class="font-size-lg text-gray-700 mb-6">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum autem inventore aspernatur doloremque ducimus porro facere distinctio blanditiis illo earum!
-    </p>
-    <div class="d-flex">
+    <div class= "col-12 col-md-6 col-lg-5 amsterdam">
+      <h2>Located in Amsterdam
+        <br>
+          <span data-toggle="typed" data-options="{"strings": ["cultural diversity", "white sand beaches", "sunny weekends"]}"></span>
+      </h2>
+      <p class="font-size-lg text-gray-700 mb-5">
+        I love Amsterdam. The city is vibrant and alive. It’s fresh and so open. It’s definitely one of my favourite places.</p>
+      <div class="d-flex">
 
-      <div class="pr-5">
-        <h4 class="text-success mb-0">
-          <p>100%</p>
-        </h4>
-        <p class="text-gray-700 mb-0">Approval</p>
-      </div>
-      <div class="border-left border-gray-300"></div>
+        <div class="pr-5">
+          <h4 class="text-success mb-0">
+            <p>100%</p>
+          </h4>
+          <p class="text-gray-700 mb-0">Approval</p>
+        </div>
+        <div class="border-left border-gray-300"></div>
 
-      <div class="px-5">
-        <h4 class="text-success mb-0">
-          <p>100%</p>
-        </h4>
-        <p class="text-gray-700 mb-0">Rainy Days</p>
-      </div>
-      <div class="border-left border-gray-300"></div>
+        <div class="px-5">
+          <h4 class="text-success mb-0">
+            <p>100%</p>
+          </h4>
+          <p class="text-gray-700 mb-0">Rainy Days</p>
+        </div>
+        <div class="border-left border-gray-300"></div>
 
-      <div class="pl-5">
-        <h4 class="text-success mb-0">
-          <p>100%</p>
-        </h4>
-        <p class="text-gray-700 mb-0">Rainy Days</p>
+        <div class="pl-5">
+          <h4 class="text-success mb-0">
+            <p>100%</p>
+          </h4>
+          <p class="text-gray-700 mb-0">Rainy Days</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
 
 <div class="container py-5">
 
-  <h2>Let's get in touch!</h2>
+  <h2 class="mb-5">Let's get in touch!</h2>
 
   <div class="box d-flex">
     <div class="card-contact">
