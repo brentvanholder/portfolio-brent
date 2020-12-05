@@ -1,33 +1,11 @@
-.projects{
+.cards-portfolio{
+  justify-content: space-between;
+}
+
+.image-portfolio{
+  height: 500px;
   width: 100%;
-  background-color: #FFFAFA;
-  height: 600px;
-  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 40px 25px;
 }
 
-.cards{
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-}
-
-.card1{
-  //position: absolute;
-  width: 350px;
-  height: 400px;
-  //right: 60px;
-  //top: 70px;
-  background-color: #f2dcbb;
-  border-radius: 10px;
-  margin-right: 10px;
-}
-
-.card2{
-  //position: absolute;
-  width: 350px;
-  height: 400px;
-  //left: 60px;
-  //top: 70px;
-  background-color: #f2dcbb;
-  border-radius: 10px;
-}
