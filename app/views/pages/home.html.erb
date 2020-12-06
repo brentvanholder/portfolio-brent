@@ -18,29 +18,45 @@
 
 
 
-
 <div class="container">
-  <h2 id="PROJECTS">Projects</h2>
-    <div class="box">
-      <div class="card">
+  <h2 id="PROJECTS" class="mb-5">Projects</h2>
+  <div class="row">
+    <div class="col-6">
+      <%= link_to "#" do %>
+      <div class="card mx-auto">
         <div class="card__thumb">
-          <a href="#">
-            <img src="https://images.unsplash.com/photo-1542779283-429940ce8336?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cG9rZW1vbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
-          </a>
+          <%= image_tag 'Home.png', style: "object-fit: cover" %>
         </div>
         <date class="card__date">
           <span class="card__date__day">Pokémon</span>
         </date>
         <div class="card__body">
-          <h2 class="card__title"><a href="#">Pokémon based on Airbnb</a></h2>
+          <h2 class="card__title">Pokémon based on Airbnb</h2>
           <div class="card__subtitle">Project week Le Wagon</div>
           <p class="card__description">During bootcamp Le Wagon, we had to fulfill a project based on Air Bnb. Our team decided to go for Pokémon.</p>
         </div>
       </div>
+      <% end %>
     </div>
+    <div class="col-6">
+       <%= link_to "#" do %>
+      <div class="card mx-auto">
+        <div class="card__thumb">
+          <%= image_tag 'itsadate.jpeg', style: "object-fit: cover" %>
+        </div>
+        <date class="card__date">
+          <span class="card__date__day">It's a date</span>
+        </date>
+        <div class="card__body">
+          <h2 class="card__title">It's a date</h2>
+          <div class="card__subtitle">Final project Le Wagon</div>
+          <p class="card__description">During bootcamp Le Wagon, we had to fulfill a project based on Air Bnb. Our team decided to go for Pokémon.</p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-
 
 <!-- Insert map and info about Amsterdam -->
 <div class="container">
