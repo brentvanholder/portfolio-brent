@@ -10,13 +10,12 @@
     <div class="card-image">
       <%= image_tag('brenticon.png') %>
     </div>
-    <div class="card-text">
-      <h1> Hi, <br>I am Brent,<br> full stack developer.</h1>
-      <h5>Front End Developer / Back End Developer</h5>
+    <div class="card-text" id="str">
     </div>
   </div>
 
 </div>
+
 
 
 
@@ -48,7 +47,7 @@
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
 
-    <div class= "col-12 col-md-6 col-lg-5 amsterdam">
+    <div class= "col-12 col-md-6 col-lg-5 mr-5 amsterdam">
       <h2>Located in Amsterdam
         <br>
           <span data-toggle="typed" data-options="{"strings": ["cultural diversity", "white sand beaches", "sunny weekends"]}"></span>
@@ -141,5 +140,16 @@
       navbar.classList.add("transparant");
     }
   }
+</script>
+
+
+<script>
+  var string = "Hello I'm Brent, full stack developer and I love developing websites";
+  var str = string.split("");
+  var el = document.getElementById('str');
+  (function animate() {
+  str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
+  var running = setTimeout(animate, 90);
+  })();
 </script>
 

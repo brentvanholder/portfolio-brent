@@ -12,7 +12,7 @@
   width: 500px;
   height: 500px;
   position: absolute;
-  left: 150px;
+  left: 130px;
   top: 130px;
 }
 
@@ -22,8 +22,21 @@
   // height: 400px;
   border-radius: 10px;
   position: absolute;
-  right: 300px;
-  top: 270px;
+  right: 100px;
+  top: 120px;
   text-align: left;
   padding: 1em;
+}
+
+
+
+#str {
+  width: 700px;
+  padding: 20px;
+  font-style: italic;
+  height: auto;
+  font-family: sans-serif;
+  font-size: 30px;
+  margin: 200px auto;
+  color: black;
 }

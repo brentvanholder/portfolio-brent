@@ -32,4 +32,5 @@ import { Mapbox } from '../plugins/mapbox.js';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   Mapbox();
+  Textanimation();
 });
