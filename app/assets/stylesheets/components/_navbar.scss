@@ -39,7 +39,16 @@
   color: white;
   position: relative;
   &:hover{
-    color: black;
+    // transform: skewX(20deg);
+    color: white;
     text-decoration: none;
+  }
+}
+
+.underline{
+  &:hover{
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
+  transition: margin-right 2s;
   }
 }
