@@ -6,4 +6,10 @@ class PagesController < ApplicationController
       image_url: helpers.asset_url('house.svg')
     }] #Longtitude and Latitude Amsterdam
   end
+
+  def pokemon
+  end
+
+  def itsadate
+  end
 end
