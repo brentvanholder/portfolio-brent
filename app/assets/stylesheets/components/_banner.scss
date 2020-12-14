@@ -1,41 +1,52 @@
 .banner{
-  background-color: #222831;
+  background-color: whitesmoke;
   height: 100vh;
-  position: relative;
-}
-
-.card-image{
-  // background-image: url('brenticon.png');
-  background-position: center;
-  //background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  left: 130px;
-  top: 130px;
-}
-
-.card-text{
-  // background-color: white;
-  // width: 400px;
-  // height: 400px;
-  border-radius: 10px;
-  position: absolute;
-  right: 100px;
-  top: 120px;
-  text-align: left;
-  padding: 1em;
 }
 
 
 
-#str {
-  width: 700px;
-  padding: 20px;
-  font-style: italic;
-  height: auto;
-  font-family: sans-serif;
-  font-size: 30px;
-  margin: 200px auto;
-  color: white;
+
+.banner-content {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.left {
+  margin-bottom: 25px;
+}
+
+
+
+
+.heading.home {
+  color: #21262f;
+  font-size: 39px;
+  font-weight: 800;
+  padding-bottom: 13px;
+}
+
+.w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.description.left {
+  margin-top: -6px;
+  padding-right: 62px;
+  font-family: Esteban, sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 36px;
+  padding-top: 7px;
+  padding-right: 36px;
+  color: #21262f;
+}
+
+.text-span-7 {
+  color: #564eff;
+}
+
+.icons-block {
+  display: inline-block;
 }

@@ -1,6 +1,4 @@
-.container{
-  height: 500px;
-}
+
 
 /**
 * VARIABLES
@@ -39,6 +37,10 @@
 * Button top right
 **/
 
+.link-to{
+    text-decoration-line: none;
+}
+
 .card__date {
     position: absolute;
     top: 20px;
@@ -52,7 +54,7 @@
 
 .card__date__day {
     font-size: 14px;
-    background-color: #222831;
+    background-color: #564eff;
     padding: 7px;
     border-radius: 30px;
 }
@@ -135,3 +137,4 @@
     transform: translateY(0px);
     transition-delay: 0.2s;
 }
+

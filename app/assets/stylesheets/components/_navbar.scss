@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background:  #564eff;;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -36,18 +36,18 @@
 }
 
 .links{
-  color: white;
+  color:  black;
   position: relative;
   &:hover{
     transform: skewX(20deg);
-    color: white;
+    color: black;
     text-decoration: none;
   }
 }
 
 .underline{
   &:hover{
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid black;
   padding-bottom: 30px;
   transition: margin-right 2s;
   }
