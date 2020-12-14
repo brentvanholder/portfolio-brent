@@ -1,4 +1,4 @@
-<div class="banner">
+<div class="banner mb-5">
   <div id="nav" class="sticky transparant">
     <a class="links underline" href="#">HOME</a>
     <a class="links underline" href="#PROJECTS">PROJECTS</a>
@@ -6,24 +6,114 @@
     <a class="links underline" href="#CONTACT">CONTACT</a>
   </div>
 
-  <div class="cards">
-    <div class="card-image">
-      <%= image_tag('brenticon.png') %>
+  <div class="container pt-5" style="max-width: 940px; text-align: left;">
+    <div class="banner-content">
+      <div class="left w-col-8">
+        <h1 class="heading home">
+          Web developer with a strong passion for
+          <span class="text-span-7">design</span> 
+        </h1>
+        <p class="description left">Currently enjoying the lovely weather of Amsterdam.</p>
+        <a href="mailto:horia.veselin@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry" class="button-primary button">Say Hello!</a>
+      </div>
+      <div class="w-col-4">
+        <img src="/assets/brenticon-52840d544e39dcbc680db2e14eb49aae2311d6805be249f59c04c0eb3b7c22be.png" alt="">
+      </div>
     </div>
-    <div class="card-text" id="str">
+  </div>
+
+</div>
+
+
+<div class="container py-5" style="max-width: 940px;">
+  <div class="row">
+    <div class="description col-8" style="margin-top: 50px;">
+      <h2 class="title-text-4 home">Hi there, I'm Brent 👋 </h2>
+      <p class="about-me-description">
+        For more than 5 years now, design has been the central piece of my world. On this fast and mind-blowing journey, I have moved over the years from being a visual designer to a full-time UX/UI thinker and designer.
+        <br>
+        <br>
+        At the moment, this journey has brought me to US Mobile where I am a full-time Senior Product Designer. In this position, as with freelance, I am working remotely and I have been for approximately two years.
+        <br>
+        <br>
+        With the constant goal of pushing design boundaries and maintaining a high standard for usability & user experience, I have consistently worked with various startups and clients from all around the world and helped them create amazing and engaging digital products.
+      </p>
+    </div>
+    <div class="image-horia right col-4">
+      <img src="/assets/brenticon-52840d544e39dcbc680db2e14eb49aae2311d6805be249f59c04c0eb3b7c22be.png" alt="">
     </div>
   </div>
 </div>
 
 
+<div class="container py-5" style="max-width: 940px; text-align: left;">
+  <h3 class="text-exp">Experience</h3>
+  <div class="line"></div>
 
+  <div class="w-layout-grid resume-grid">
+    <div class="resume-text">2020-Present</div>
+    <div class="resume-body">
+      <strong class="bold-text-4">Le Wagon</strong>
+        Amsterdam
+        <br>
+        <span class="text-span">9 week intensive coding bootcamp</span>
+    </div>
 
-<div class="container">
-  <h2 id="PROJECTS" class="mb-5">Projects</h2>
-  <div class="row" style="padding:0 100px">
-    <div class="col-6">
-      <%= link_to projects_pokemon_path do %>
-      <div class="card mx-auto">
+    <div class="resume-text">2020</div>
+    <div class="resume-body">
+      <strong class="bold-text-4">Zetenta Digital</strong>
+        Buenos Aires
+        <br>
+        <span class="text-span">Intern digital marketing agency</span>
+    </div>
+    
+    <div class="resume-text">2019</div>
+    <div class="resume-body">
+      <strong class="bold-text-4">EAN Universidad</strong>
+        Bogota
+        <br>
+        <span class="text-span">Exchange student</span>
+    </div>
+  </div>
+
+  <div class="w-layout-grid resume-grid pt-5">
+    <div class="resume-text">2020-Present</div>
+    <div class="resume-body">
+      <strong class="bold-text-4">US Mobile</strong>
+        New York
+        <br>
+        <span class="text-span ">Senior Product Designer</span>
+    </div>
+
+    <div class="resume-text">2020-Present</div>
+    <div class="resume-body">
+      <strong class="bold-text-4">US Mobile</strong>
+        New York
+        <br>
+        <span class="text-span">Senior Product Designer</span>
+    </div>
+    
+    <div class="resume-text">2020-Present</div>
+    <div class="resume-body">
+      <strong class="bold-text-4">US Mobile</strong>
+        New York
+        <br>
+        <span class="text-span ">Senior Product Designer</span>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5"style="max-width: 940px; text-align: left;">
+  <h3 class="text-exp pt-5">Skills & Tools</h3>
+  <div class="line"></div>
+</div>
+
+<div class="container py-5" style="max-width: 940px; text-align: left;">
+  <h2 class="headline-projects"> Projects ✍️</h2>
+  <p>Probably the section you are most interested in. Have fun exploring some of<br> my recent projects and maybe come back afterwards?</p>
+  <div class="row mt-5" style="justify-content: space-around;">
+      <%= link_to projects_pokemon_path, class:"link-to" do %>
+      <div class="card mx-auto mt-3">
         <div class="card__thumb">
           <%= image_tag 'Home.png', style: "object-fit: cover" %>
         </div>
@@ -37,10 +127,8 @@
         </div>
       </div>
       <% end %>
-    </div>
-    <div class="col-6">
      <%= link_to projects_itsadate_path do %>
-     <div class="card mx-auto">
+     <div class="card mx-auto mt-3">
       <div class="card__thumb">
         <%= image_tag 'itsadate.jpeg', style: "object-fit: cover" %>
       </div>
@@ -56,99 +144,38 @@
     <% end %>
   </div>
 </div>
-</div>
 
-<!-- Insert map and info about Amsterdam -->
-<div class="container">
-  <h1 id="ABOUTME" class="mb-5">A little bit more about myself</h1>
+<!-- LET'S CONNECT -->
 
-
-  <!-- Start About Me -->
-
-  <div class="about-me">
-    <div class="containerB">
-      <div class="image">
-        <img src="https://source.unsplash.com/-ozu92PXFWU/400x600" alt="Test">
-      </div>
-      <div class="info">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt Duis aute irure dolor in
-        reprehenderit .</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
-        <div class="hobbies">
-          <!-- Start Box Content -->
-          <div class="content">
-            <!-- Start Icon -->
-            <div class="icon">
-              <i class="fa fa-paint-brush fa-2x"></i>
-            </div>
-            <!-- End Icon -->
-            <!-- Start Text -->
-            <div class="text">
-              <h3>Web Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
-            </div>
-            <!-- End Text -->
-          </div>
-          <!-- End Box Content -->
-
-          <!-- Start Box Content -->
-          <div class="content">
-            <!-- Start Icon -->
-            <div class="icon">
-              <i class="fa fa-users  fa-2x"></i>
-            </div>
-            <!-- End Icon -->
-            <!-- Start Text -->
-            <div class="text">
-              <h3>Marketing</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
-            </div>
-            <!-- End Text -->
-          </div>
-          <!-- End Box Content -->
-
-          <!-- Start Box Content -->
-          <div class="content">
-            <!-- Start Icon -->
-            <div class="icon">
-              <i class="fa fa-magic fa-2x"></i>
-            </div>
-            <!-- End Icon -->
-            <!-- Start Text -->
-            <div class="text">
-              <h3>Graphic Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
-            </div>
-            <!-- End Text -->
-          </div>
-          <!-- End Box Content -->
-
-          <!-- Start Box Content -->
-          <div class="content">
-            <!-- Start Icon -->
-            <div class="icon">
-              <i class="fa fa-line-chart fa-2x"></i>
-            </div>
-            <!-- End Icon -->
-            <!-- Start Text -->
-            <div class="text">
-              <h3>Seo</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
-            </div>
-            <!-- End Text -->
-          </div>
-          <!-- End Box Content -->
-        </div>
-      </div>
+<div class="container pt-5" style="max-width: 940px; text-align: left;">
+  <div class="row">
+    <div class="ctatext-2">
+      <h2 class="contactheader home">Let's connect 🤙</h2>
+      <p class="contact-description left">For any work collaborations, fan letters or even a simple chat, take the first step and reach out via e-mail or one of my social media profiles. </p>
     </div>
   </div>
-  <!-- End About Me -->
+  <div class="row" style="justify-content: space-between;">
+    <a href="mailto:brentvanholder@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry" class="button-primary">Say Hello!</a>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/brentvanholder/"><i class="fab fa-linkedin" style="font-size: 53px; color: #564eff;"></i></a>
+      <a href="https://github.com/brentvanholder"><i class="fab fa-github-square" style="font-size: 53px; color: #564eff;"></i></a>
+    </div>
+  </div>
+</div>
 
 
 
 
 
+
+
+
+
+
+
+
+<!-- Insert map and info about Amsterdam -->
+<div class="container pt-5">
   <div class="row shadow mt-5">
     <div id="map"
     style="width: 50%; height: 400px;"
@@ -188,46 +215,15 @@
           <p class="text-gray-700 mb-0">Rainy Days</p>
         </div>
       </div>
-  </div>
-</div>
-
-<div class="container py-5">
-  <h2 id="CONTACT" class="mb-5">Let's get in touch!</h2>
-  <div class="box d-flex">
-    <div class="card-contact">
-      <div class="contact-text">
-        <i class="fas fa-envelope" style="font-size: 35px;"></i>
-        <p>brentvanholder@gmail.com</p>
-      </div>
-    </div>
-
-    <div class="card-contact">
-      <div class="contact-text">
-        <i class="fas fa-phone" style="font-size: 35px;"></i>
-        <p>+31 6 127 65 605</p>
-      </div>
-    </div>
-
-    <div class="card-contact">
-      <div class="contact-text">
-        <a href="https://www.linkedin.com/in/brentvanholder/", target="_blank", class="icon">
-          <i class="fab fa-linkedin" style="font-size: 40px;"></i>
-        </a>
-        <a href="https://github.com/brentvanholder", target="_blank", class="icon">
-          <i class="fab fa-github-square" style="font-size: 40px;"></i>
-        </a>
-      </div>
     </div>
   </div>
 </div>
 
-
-
-
-
-
-
-
+<div class="footer mt-5">
+  <div class="footer-copyright">
+    This page is made with <i class="fas fa-heart"></i> by Brent Van Holder
+  </div>
+</div>
 
 
 
@@ -259,3 +255,4 @@
   })();
 </script>
 
+ 

@@ -1,83 +1,11 @@
-// Specific CSS for your home-page
-.text{
-  justify-content: center;
-}
 
 
-/* Start About Me */
-.about-me {
-  background-color: #f2f2f2;
-  overflow: hidden;
-  /*width: 100%;*/
-  border-radius: 10px;
-}
-  /*border: 0.5em solid;*/
-.about-me >div{
-  /*box-sizing: border-box;*/
-}
-.about-me .image {
-  float: left;
-  width: 30% ;
-  /*height: 600px;*/
-
+.footer {
+  background: grey;
+  height: 100px;
+  color: white;
 }
 
-.about-me .image img {
-  width: 100%;
-  /*height: 100%;*/
+.footer .fa-heart {
+  color: #D23333;
 }
-
-.about-me .info {
-  float: left;
-  width: 65%;
-  margin: 1.5% 2.5% 0 2.5%;
-}
-
-.about-me .info h2 {
-  margin: 20px 0 20px 40px;
-  color: #555;
-}
-.about-me .info >p {
-  margin: 0 0 10px 40px;
-}
-.about-me .info > p:last-of-type {
-  margin-top: 10px;
-
-}
-.about-me .info  p {
-  line-height: 1.5;
-  color: #888;
-}
-.about-me .info .hobbies {
-  overflow: hidden;
-  margin: 20px 0 0 40px;
-}
-.about-me .info .hobbies .content {
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  min-height: 100px;
-  overflow: hidden;
-}
-.about-me .info .hobbies .content h3{
-  color: #555;
-}
-.about-me .info .hobbies .content .icon {
-  float: left;
-  width: 12%;
-}
-.about-me .info .hobbies .content .icon i{
-  max-width: 100%;
-  padding-top: 10px;
-}
-.about-me .info .hobbies .content .text {
-  float: left;
-  width: 84%;
-  margin-left: 2%;
-}
-/* End About Me */
-
-
-
-
-
