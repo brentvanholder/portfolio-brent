@@ -1,3 +1,5 @@
+
+<!-- BANNER -->
 <div class="banner mb-5">
   <div id="nav" class="sticky transparant">
     <a class="links underline" href="#">HOME</a>
@@ -9,9 +11,9 @@
   <div class="container pt-5" style="max-width: 940px; text-align: left;">
     <div class="banner-content">
       <div class="left w-col-8">
-        <h1 class="heading home">
-          Web developer with a strong passion for
-          <span class="text-span-7">design</span> 
+        <h1 class="heading home" id="str">
+          <%# Web developer with a strong passion for
+          <span class="text-span-7">design</span>  %>
         </h1>
         <p class="description left">Currently enjoying the lovely weather of Amsterdam.</p>
         <a href="mailto:horia.veselin@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry" class="button-primary button">Say Hello!</a>
@@ -24,7 +26,7 @@
 
 </div>
 
-
+<!-- DESCRIPTION -->
 <div class="container py-5" style="max-width: 940px;">
   <div class="row">
     <div class="description col-8" style="margin-top: 50px;">
@@ -38,14 +40,18 @@
         <br>
         With the constant goal of pushing design boundaries and maintaining a high standard for usability & user experience, I have consistently worked with various startups and clients from all around the world and helped them create amazing and engaging digital products.
       </p>
+      <div class="socials" style="text-align: left;">
+        <a href="https://www.linkedin.com/in/brentvanholder/"><i class="fab fa-linkedin" style="font-size: 40px; color: #564eff;"></i></a>
+        <a href="https://github.com/brentvanholder"><i class="fab fa-github-square" style="font-size: 40px; color: #564eff;"></i></a>
+      </div>
     </div>
-    <div class="image-horia right col-4">
-      <img src="/assets/brenticon-52840d544e39dcbc680db2e14eb49aae2311d6805be249f59c04c0eb3b7c22be.png" alt="">
+    <div class="d-flex col-4">
+      <%= image_tag "devicon.svg", class:"w-100" %>
     </div>
   </div>
 </div>
 
-
+<!-- EXPERIENCE -->
 <div class="container py-5" style="max-width: 940px; text-align: left;">
   <h3 class="text-exp">Experience</h3>
   <div class="line"></div>
@@ -103,16 +109,28 @@
   </div>
 </div>
 
-<div class="container py-5"style="max-width: 940px; text-align: left;">
-  <h3 class="text-exp pt-5">Skills & Tools</h3>
+<!-- SKILLS & TOOLS -->
+<div class="container py-5 text-left" style="max-width: 940px;">
+  <h3 class="text-exp">Skills & Tools</h3>
   <div class="line"></div>
+  <div class="d-flex skills" >
+    <%= image_tag "ruby"%>
+    <%= image_tag "rails"%>
+    <%= image_tag "javascript"%>
+    <%= image_tag "postgresql"%>
+    <%= image_tag "heroku"%>
+    <%= image_tag "trello"%>
+    <%= image_tag "bootstrap"%>
+    <%= image_tag "slack"%>
+  </div>
 </div>
 
+<!-- PROJECTS -->
 <div class="container py-5" style="max-width: 940px; text-align: left;">
   <h2 class="headline-projects"> Projects ✍️</h2>
   <p>Probably the section you are most interested in. Have fun exploring some of<br> my recent projects and maybe come back afterwards?</p>
   <div class="row mt-5" style="justify-content: space-around;">
-      <%= link_to projects_pokemon_path, class:"link-to" do %>
+      <%= link_to projects_pokemon_path, class:"no-underline" do %>
       <div class="card mx-auto mt-3">
         <div class="card__thumb">
           <%= image_tag 'Home.png', style: "object-fit: cover" %>
@@ -127,7 +145,7 @@
         </div>
       </div>
       <% end %>
-     <%= link_to projects_itsadate_path do %>
+     <%= link_to projects_itsadate_path, class:"no-underline" do %>
      <div class="card mx-auto mt-3">
       <div class="card__thumb">
         <%= image_tag 'itsadate.jpeg', style: "object-fit: cover" %>
@@ -146,79 +164,22 @@
 </div>
 
 <!-- LET'S CONNECT -->
-
-<div class="container pt-5" style="max-width: 940px; text-align: left;">
+<div class="container py-5" style="max-width: 940px; text-align: left;">
   <div class="row">
     <div class="ctatext-2">
-      <h2 class="contactheader home">Let's connect 🤙</h2>
+      <h2 class="contactheader home"> Let's connect 🤙</h2>
       <p class="contact-description left">For any work collaborations, fan letters or even a simple chat, take the first step and reach out via e-mail or one of my social media profiles. </p>
     </div>
   </div>
+
   <div class="row" style="justify-content: space-between;">
-    <a href="mailto:brentvanholder@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry" class="button-primary">Say Hello!</a>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/brentvanholder/"><i class="fab fa-linkedin" style="font-size: 53px; color: #564eff;"></i></a>
-      <a href="https://github.com/brentvanholder"><i class="fab fa-github-square" style="font-size: 53px; color: #564eff;"></i></a>
-    </div>
+    <a href="mailto:brentvanholder@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry" class="button-primary">
+      <i class="far fa-envelope fa-lg mr-3"></i>Say Hello!
+    </a>
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- Insert map and info about Amsterdam -->
-<div class="container pt-5">
-  <div class="row shadow mt-5">
-    <div id="map"
-    style="width: 50%; height: 400px;"
-    data-markers="<%= @marker.to_json %>"
-    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-    </div>
-
-    <div class= "col-12 col-md-6 col-lg-5 mr-5 amsterdam">
-      <h2>Located in Amsterdam
-        <br>
-        <span data-toggle="typed" data-options="{"strings": ["cultural diversity", "white sand beaches", "sunny weekends"]}"></span>
-      </h2>
-      <p class="font-size-lg text-gray-700 mb-5">
-      I love Amsterdam. The city is vibrant and alive. It’s fresh and so open. It’s definitely one of my favourite places.</p>
-      <div class="d-flex">
-
-        <div class="pr-5">
-          <h4 class="text-success mb-0">
-            <p>100%</p>
-          </h4>
-          <p class="text-gray-700 mb-0">Approval</p>
-        </div>
-        <div class="border-left border-gray-300"></div>
-
-        <div class="px-5">
-          <h4 class="text-success mb-0">
-            <p>100%</p>
-          </h4>
-          <p class="text-gray-700 mb-0">Rainy Days</p>
-        </div>
-        <div class="border-left border-gray-300"></div>
-
-        <div class="pl-5">
-          <h4 class="text-success mb-0">
-            <p>100%</p>
-          </h4>
-          <p class="text-gray-700 mb-0">Rainy Days</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<!-- FOOTER -->
 <div class="footer mt-5">
   <div class="footer-copyright">
     This page is made with <i class="fas fa-heart"></i> by Brent Van Holder
