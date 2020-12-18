@@ -12,9 +12,8 @@
   <div class="container pt-5" style="max-width: 940px; text-align: left;">
     <div class="banner-content">
       <div class="left col-7">
-        <h1 class="heading home" >
-          Web developer with a strong passion for
-          <span class="text-span-7">design</span> 
+        <h1 class="heading home" id="str" >
+          <span class="text-span-7"></span> 
         </h1>
         <p class="description left">Currently enjoying the lovely weather of Amsterdam.</p>
         <div class="d-flex">
@@ -35,14 +34,13 @@
     <div class="description col-8" style="margin-top: 50px;">
       <h2 class="title-text-4 home">Hi there, I'm Brent 👋 </h2>
       <p class="about-me-description">
-
-        For more than 5 years now, design has been the central piece of my world. On this fast and mind-blowing journey, I have moved over the years from being a visual designer to a full-time UX/UI thinker and designer.
+        Last year I started building some shopify webstores when I was in Argentina for my internship at a digital marketing agency. During my internship I discovered how international and local companies launch online marketing campaigns through google and facebook.
         <br>
         <br>
-        At the moment, this journey has brought me to US Mobile where I am a full-time Senior Product Designer. In this position, as with freelance, I am working remotely and I have been for approximately two years.
+        Through youtube videos, online implementation guides and getting to the bottom of forums, I finally found a solution for every obstacle that arose when building the webshop. My motto is not to stand still, but to take action, even when it's difficult. Trial and error is the best way to learn.        
         <br>
         <br>
-        With the constant goal of pushing design boundaries and maintaining a high standard for usability & user experience, I have consistently worked with various startups and clients from all around the world and helped them create amazing and engaging digital products.
+        I joined Le Wagon to gain a broader knowledge of both back-end and front-end. During this bootcamp I stronged my passion for design. Now, I am looking forward to work as a front-end developer for a company I care about.
       </p>
       <div class="socials" style="text-align: left;">
         <a href="https://www.linkedin.com/in/brentvanholder/" target="_blank"><i class="fab fa-linkedin" style="font-size: 40px; color: #564eff;"></i></a>
@@ -133,7 +131,7 @@
 <div class="container py-5 text-left" id="PROJECTS" style="max-width: 940px;">
   <h2 class="headline-projects"> Projects ✍️</h2>
   <p>Probably the section you are most interested in. Have fun exploring some of<br> my recent projects and maybe come back afterwards?</p>
-  <div class="row mt-5" style="justify-content: space-around;">
+  <div class="d-flex">
       <%= link_to projects_pokemon_path, class:"no-underline" do %>
       <div class="card mx-auto mt-3">
         <div class="card__thumb">
@@ -143,24 +141,24 @@
           <span class="card__date__day">Pokémon</span>
         </date>
         <div class="card__body">
-          <h2 class="card__title">Pokémon based on Airbnb</h2>
-          <div class="card__subtitle">Project week Le Wagon</div>
-          <p class="card__description">During bootcamp Le Wagon, we had to fulfill a project based on Air Bnb. Our team decided to go for Pokémon.</p>
+          <h2 class="card__title">Pokémon</h2>
+          <div class="card__subtitle">Project Le Wagon</div>
+          <p class="card__description">This project is based on Airbnb and was part of Le Wagon bootcamp.</p>
         </div>
       </div>
       <% end %>
      <%= link_to projects_itsadate_path, class:"no-underline" do %>
      <div class="card mx-auto mt-3">
       <div class="card__thumb">
-        <%= image_tag 'itsadate.jpeg', style: "object-fit: cover" %>
+        <%= image_tag 'itsadate.png', style: "object-fit: cover" %>
       </div>
       <date class="card__date">
         <span class="card__date__day">It's a date</span>
       </date>
       <div class="card__body">
         <h2 class="card__title">It's a date</h2>
-        <div class="card__subtitle">Final project Le Wagon</div>
-        <p class="card__description">During bootcamp Le Wagon, we had to fulfill a project based on Air Bnb. Our team decided to go for Pokémon.</p>
+        <div class="card__subtitle"><a href="https://itsadate.online" target="_blank">www.itsadate.online</a></div>
+        <p class="card__description">With a team of 4 people we created this website as our final project during bootcamp Le Wagon</p>
       </div>
     </div>
     <% end %>
@@ -206,7 +204,7 @@
 
 
 <script>
-  var string = "Hello I'm Brent, full stack developer and I love developing websites.";
+  var string = "Web developer with a strong passion for design";
   var str = string.split("");
   var el = document.getElementById('str');
   (function animate() {
