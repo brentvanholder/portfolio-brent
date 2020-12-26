@@ -1,39 +1,59 @@
 
 <!-- BANNER -->
-<div class="banner mb-5">
-  <div id="nav" class="sticky transparant">
-    <a class="links underline" href="#">HOME</a>
-    <a class="links underline" href="#EXPERIENCE">EXPERIENCE</a>
-    <a class="links underline" href="#SKILLS">SKILLS</a>
-    <a class="links underline" href="#PROJECTS">PROJECTS</a>
-    <a class="links underline" href="#CONTACT">CONTACT</a>
-  </div>
-
-  <div class="container pt-5" style="max-width: 940px; text-align: left;">
-    <div class="banner-content">
-      <div class="left col-7">
-        <h1 class="heading home" id="str" >
-          <span class="text-span-7"></span> 
-        </h1>
-        <p class="description left">Currently enjoying the lovely weather of Amsterdam.</p>
-        <div class="d-flex">
-          <a href="mailto:horia.veselin@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry" class="button-primary button">Say Hello!</a>
-        </div>
-      </div>
-      <div class="w-col-4">
-        <img src="/assets/brenticon-52840d544e39dcbc680db2e14eb49aae2311d6805be249f59c04c0eb3b7c22be.png" alt="">
-      </div>
+<div class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid" >
+    <button class="navbar-toggler" type="button" data-toggle= "collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="text-navbar collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">HOME</a>
+        </li>
+          <li class="nav-item">
+          <a href="#EXPERIENCE" class="nav-link">EXPERIENCE</a>
+        </li>
+          <li class="nav-item">
+          <a href="#SKILLS" class="nav-link">SKILLS</a>
+        </li>
+          <li class="nav-item">
+          <a href="#PROJECTS" class="nav-link">PROJECTS</a>
+        </li>
+          <li class="nav-item">
+          <a href="#CONTACT" class="nav-link">CONTACT</a>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
 
+<div class="banner">
+  <div class="container-fluid" style="max-width: 940px; text-align: left;">
+    <div class="row text-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <img class="img-fluid" src="/assets/brenticon-52840d544e39dcbc680db2e14eb49aae2311d6805be249f59c04c0eb3b7c22be.png" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 my-auto">
+          <h1 class="heading home" id="str" >
+            <span class="text-span-7"></span> 
+          </h1>
+          <p class="description">Currently enjoying the lovely weather of Amsterdam.</p>
+          <a href="mailto:horia.veselin@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry">
+            <button class="button-primary button mb-3">
+              Say Hello!
+            </button>
+          </a>
+        </div>
+    </div>
+  </div>
 </div>
 
 <!-- DESCRIPTION -->
-<div class="container py-5" style="max-width: 940px;">
-  <div class="row">
-    <div class="description col-8" style="margin-top: 50px;">
-      <h2 class="title-text-4 home">Hi there, I'm Brent 👋 </h2>
-      <p class="about-me-description">
+<div class="container-fluid py-5" style="max-width: 940px;">
+  <div class="d-flex flex-wrap text-center">
+    <div class="col-sm-12 col-md-8">
+      <h2 class="title-description">Hi there, I'm Brent 👋 </h2>
+      <p class="text-description">
         Last year I started building some shopify webstores when I was in Argentina for my internship at a digital marketing agency. During my internship I discovered how international and local companies launch online marketing campaigns through google and facebook.
         <br>
         <br>
@@ -42,105 +62,99 @@
         <br>
         I joined Le Wagon to gain a broader knowledge of both back-end and front-end. During this bootcamp I stronged my passion for design. Now, I am looking forward to work as a front-end developer for a company I care about.
       </p>
-      <div class="socials" style="text-align: left;">
+      <div class="socials">
         <a href="https://www.linkedin.com/in/brentvanholder/" target="_blank"><i class="fab fa-linkedin" style="font-size: 40px; color: #564eff;"></i></a>
         <a href="https://github.com/brentvanholder" target="_blank"><i class="fab fa-github-square" style="font-size: 40px; color: #564eff;"></i></a>
       </div>
     </div>
-    <div class="d-flex col-4">
+    <div class="col-sm-12 col-md-4 d-none d-md-block" style="padding-top: 68px;">
       <%= image_tag "devicon.svg", class:"w-100" %>
     </div>
   </div>
 </div>
 
 <!-- EXPERIENCE -->
-<div class="container py-5" id="EXPERIENCE" style="max-width: 940px; text-align: left;">
-  <h3 class="text-exp">Experience</h3>
-  <div class="line"></div>
+<div class="container py-5" id="EXPERIENCE" style="max-width: 940px;">
+    <h3 class="col-sm-12 title-experience text-center">Experience</h3>
+    <div class="line"></div>
 
-  <div class="w-layout-grid resume-grid">
-    <div class="resume-text">2020 (Oct - Dec)</div>
-    <div class="resume-body">
-      <strong class="bold-text-4">Le Wagon</strong>
+    <div class="d-flex flex-wrap mx-auto" style="justify-content: center;">
+      <div class="py-4" style="width: 30%; min-width: 200px;">
+        <h2 class="resume-text">2020 (Oct - Dec)</h2>
+        <strong class="d-block">Le Wagon</strong>
         Amsterdam 🇳🇱
-        <br>
-        <span class="text-span">9 week intensive coding bootcamp</span>
-    </div>
-
-    <div class="resume-text">2020 (Feb - June)</div>
-    <div class="resume-body">
-      <strong class="bold-text-4">Zetenta Digital</strong>
+        <div class="text-span">9 week intensive coding bootcamp</div>
+      </div>
+      <div class="py-4" style="width: 30%; min-width: 200px;">
+        <h2 class="resume-text">2020 (Feb - June)</h2>
+        <strong class="d-block">Zetenta Digital</strong>
         Buenos Aires 🇦🇷
-        <br>
-        <span class="text-span">Intern digital marketing agency</span>
-    </div>
-    
-    <div class="resume-text">2019 (July - Nov)</div>
-    <div class="resume-body">
-      <strong class="bold-text-4">EAN Universidad</strong>
+        <div class="text-span">Intern digital<br> marketing agency</div>
+      </div>
+      <div class="py-4" style="width: 30%; min-width: 200px;">
+        <h2 class="resume-text">2019 (July - Nov)</h2>
+        <strong class="d-block">EAN Universidad</strong>
         Bogota 🇨🇴
-        <br>
-        <span class="text-span">Exchange student</span>
-    </div>
-  </div>
-
-  <div class="w-layout-grid resume-grid pt-5">
-    <div class="resume-text">2017-2021</div>
-    <div class="resume-body">
-      <strong class="bold-text-4">Artevelde University</strong>
+        <div class="text-span">Exchange student</div>
+      </div>
+ 
+      <div class="py-4" style="width: 30%; min-width: 200px;">
+        <h2 class="resume-text">2017-2021</h2>
+        <strong class="d-block">Artevelde University</strong>
         Ghent 🇧🇪
-        <br>
-        <span class="text-span ">Bachelor of International Business Management</span>
-    </div>
-
-    <div class="resume-text">2016-2017</div>
-    <div class="resume-body">
-      <strong class="bold-text-4">Absolut Beach</strong>
+        <div class="text-span">Bachelor of International Business Management</div>
+      </div>
+      <div class="py-4 d-none d-sm-block" style="width: 30%; min-width: 200px;">
+        <h2 class="resume-text">2016-2017</h2>
+        <strong class="d-block">Absolut Beach</strong>
         Oudenaarde 🇧🇪
-        <br>
-        <span class="text-span">Bartender</span>
-    </div>
-    
-    <div class="resume-text">2015-2019</div>
-    <div class="resume-body">
-      <strong class="bold-text-4">Bpost</strong>
+        <div class="text-span">Bartender</div>
+      </div>
+      <div class="py-4 d-none d-sm-block" style="width: 30%; min-width: 200px;">
+        <h2 class="resume-text">2015-2019</h2>
+        <strong class="d-block">Bpost</strong>
         Brakel 🇧🇪
-        <br>
-        <span class="text-span ">Student job delivery</span>
+        <div class="text-span ">Student job delivery</div>
+      </div>
     </div>
-  </div>
 </div>
 
 <!-- SKILLS & TOOLS -->
-<div class="container py-5 text-left" id="SKILLS" style="max-width: 940px;">
-  <h3 class="text-exp">Skills & Tools</h3>
+<div class="container py-5 text-center" id="SKILLS" style="max-width: 940px;">
+  <h3 class="title-skills">Skills & Tools</h3>
   <div class="line"></div>
-  <div class="d-flex skills" >
-    <%= image_tag "ruby"%>
-    <%= image_tag "rails" %>
-    <%= image_tag "javascript"%>
-    <%= image_tag "postgresql"%>
-    <%= image_tag "heroku"%>
-    <%= image_tag "trello"%>
-    <%= image_tag "bootstrap"%>
-    <%= image_tag "slack"%>
-    <%= image_tag "tailwind2"%>
+  <div class="d-flex flex-wrap" style="justify-content: center;">
+    <div class="skills pt-2" >
+      <%= image_tag "ruby"%>
+      <%= image_tag "rails" %>
+      <%= image_tag "javascript"%>
+      <%= image_tag "postgresql"%>
+      <%= image_tag "heroku"%>
+      <%= image_tag "trello"%>
+      <%= image_tag "bootstrap"%>
+      <%= image_tag "slack"%>
+      <%= image_tag "tailwind2"%>
+    </div>
   </div>
 </div>
 
 <!-- PROJECTS -->
-<div class="container py-5 text-left" id="PROJECTS" style="max-width: 940px;">
-  <h2 class="headline-projects"> Projects ✍️</h2>
-  <p>Probably the section you are most interested in. Have fun exploring some of<br> my recent projects and maybe come back afterwards?</p>
-  <div class="d-flex" style="justify-content: space-around;">
+<div class="container py-5 text-center" id="PROJECTS" style="max-width: 940px;">
+    <h2 class="title-projects">Projects ✍️</h2>
+    <p class="text-projects">
+      Probably the section you are most interested in. Have fun exploring some of<br> my recent projects and maybe come back afterwards?
+    </p>
+  <div class="row mx-auto" style="justify-content: center;">
+  
+    <div class="col-xs-12 col-sm-12 col-md-6" style="max-width: 400px;">
       <%= link_to "https://pika-pika-me-amcheers.herokuapp.com", class:"no-underline" do %>
-      <div class="card mx-auto mt-3">
+      <div class="card mt-3">
         <div class="card__thumb">
           <%= image_tag 'Home.png', style: "object-fit: cover" %>
         </div>
-        <date class="card__date">
+        <div class="card__date">
           <span class="card__date__day">Pokémon</span>
-        </date>
+        </div>
         <div class="card__body">
           <h2 class="card__title">Pokémon</h2>
           <div class="card__subtitle">⏱️ Build in 5 days</div>
@@ -148,33 +162,40 @@
         </div>
       </div>
       <% end %>
-     <%= link_to "https://itsadate.online", target:"_blank", class:"no-underline" do %>
-     <div class="card mx-auto mt-3">
-      <div class="card__thumb">
-        <%= image_tag 'itsadate.png', style: "object-fit: cover" %>
+    </div>      
+    
+    <div class="col-xs-12 col-sm-12 col-md-6" style="justify-content: center; max-width: 400px;">
+      <%= link_to "https://itsadate.online", target:"_blank", class:"no-underline" do %>
+      <div class="card mt-3">
+        <div class="card__thumb">
+          <%= image_tag 'itsadate.png', style: "object-fit: cover" %>
+        </div>
+        <div class="card__date">
+          <span class="card__date__day">It's a date</span>
+        </div>
+        <div class="card__body">
+          <h2 class="card__title">It's a date</h2>
+          <div class="card__subtitle">⏱️ Build in 10 days</div>
+          <p class="card__description">With a team of 4 people we created this website as our final project during bootcamp Le Wagon</p>
+        </div>
       </div>
-      <date class="card__date">
-        <span class="card__date__day">It's a date</span>
-      </date>
-      <div class="card__body">
-        <h2 class="card__title">It's a date</h2>
-        <div class="card__subtitle">⏱️ Build in 10 days</div>
-        <p class="card__description">With a team of 4 people we created this website as our final project during bootcamp Le Wagon</p>
-      </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
 </div>
 
 <!-- LET'S CONNECT -->
-<div class="container py-5" id="CONTACT" style="max-width: 940px; text-align: left;">
-    <h2 class="contactheader home"> Let's connect 🤙</h2>
-    <p class="contact-description left">Are you looking for a team-player, who learns quickly? Don't hesitate to contact men for any work collaborations, fan letters or even a simple chat. </p>
-      <div class="d-flex">
-        <a href="mailto:brentvanholder@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry" class="button-primary button">
-        <i class="far fa-envelope fa-lg mr-3"></i>Say Hello!
-        </a>
-      </div>
+<div class="container py-5 text-center" id="CONTACT" style="max-width: 940px;">
+    <div class="col-sm-12">
+      <h2 class="title-contact"> Let's connect 🤙</h2>
+      <p class="text-contact">Are you looking for a team-player, who learns quickly? Don't hesitate to contact me for any work collaborations, fan letters or even a simple chat. </p>
+      <a href="mailto:brentvanholder@gmail.com?subject=e.g.%20Fan%20Letter%2C%20Work%20Inquiry">
+        <button class="button-primary button">
+          <i class="far fa-envelope fa-lg mr-1"></i>
+          Say Hello!
+        </button>
+      </a>
+    </div>
 </div>
 
 <!-- FOOTER -->

@@ -1,45 +1,76 @@
 
-
-.title-text-4.home {
+// DESCRIPTION TEXT
+.title-description {
     margin-top: 10px;
     margin-bottom: 15px;
-    /* padding-bottom: 0px; */
     font-family: Montserrat, sans-serif;
     color: #21262f;
-    font-size: 38px;
-    font-weight: 800;
-    text-align: left;
-}
-
-
-.headline-projects {
-    display: inline-block;
-    font-family: Montserrat, sans-serif;
+    font-size: 1.6rem;
     font-weight: 800;
 }
 
-.about-me-description {
+.text-description {
     padding-top: 12px;
     padding-right: 7px;
     padding-bottom: 12px;
-    font-size: 18px;
     line-height: 26px;
     font-weight: 400;
-    text-align: left;
 }
 
 
-
-  
- 
-   
-
-
-.text-exp{
+// EXPERIENCE TEXT
+.title-experience{
     margin-top: 0px;
     margin-bottom: 20px;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.resume-text {
+    font-family: Montserrat, sans-serif;
+    color: rgba(33, 38, 47, 0.5);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.text-span {
+    color: #21262f;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+
+
+// SKILLS TEXT
+.title-skills{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.skills img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+
+
+
+// PROJECTS TEXT
+.title-projects {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.text-projects{
+    line-height: 26px;
+    font-weight: 400;
 }
 
 .line{
@@ -49,51 +80,18 @@
     background-color: rgba(33, 38, 47, 0.17);
 }
 
-.resume-text {
-    font-family: Montserrat, sans-serif;
-    color: rgba(33, 38, 47, 0.5);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.text-span {
+// CONTACT TEXT
+.title-contact {
     color: #21262f;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-}
-
-
-.resume-grid {
-    grid-auto-flow: column;
-    grid-row-gap: 7px;
-    /* grid-template-areas: "Area"; */
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.w-layout-grid {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
-}
-
-.contactheader.home {
-    color: #21262f;
-    font-size: 38px;
+    font-size: 1.6rem;
     font-weight: 800;
-    letter-spacing: -0.72px;
+    font-family: Montserrat, sans-serif;
 }
 
-
-.contact-description.left {
+.text-contact {
     margin-bottom: 40px;
-    font-family: Esteban, sans-serif;
     color: #21262f;
-    line-height: 28px;
+    line-height: 26px;
 }
 
 
@@ -192,9 +190,3 @@
 }
 
 
-.skills img{
-    width: 80px;
-    height: 80px;
-    margin-right: 20px;
-    border-radius: 10px;
-}

@@ -13,13 +13,14 @@
 **/
 
 .card {
-  // transform: translateX(-50%) translateY(-50%) translateZ(0);
-  width: 370px;
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: box-shadow 0.5s;
-  border-radius: 10px;
+    // transform: translateX(-50%) translateY(-50%) translateZ(0);
+    width: 100%;
+    //   max-width: 370px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+    border-radius: 10px;
 }
 
 

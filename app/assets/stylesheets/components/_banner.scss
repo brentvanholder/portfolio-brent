@@ -1,13 +1,13 @@
 .banner{
   background-color: whitesmoke;
-  height: 90vh;
+  height: 100%;
 }
 
-.banner-content {
-  display: flex;
-  margin-top: 60px;
-  align-items: center;
-}
+// .banner-content {
+//   display: flex;
+//   margin-top: 60px;
+//   align-items: center;
+// }
 
 .left {
   margin-bottom: 25px;
@@ -18,7 +18,7 @@
 
 .heading.home {
   color: #21262f;
-  font-size: 39px;
+  font-size: 1.6rem;
   font-weight: 800;
   padding-bottom: 13px;
   font-family: Montserrat, sans-serif;
