@@ -1,6 +1,6 @@
 
 <!-- NAVBAR -->
-<div class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div id="nav" class="navbar navbar-expand-md navbar-light bg-light sticky-top">
   <div class="container-fluid" >
     <button class="navbar-toggler" type="button" data-toggle= "collapse" data-target="#navbarResponsive">
       <span class="navbar-toggler-icon"></span>
@@ -205,36 +205,3 @@
     Made with <i class="fas fa-heart"></i> by Brent Van Holder
   </div>
 </div>
-
-
-
-
-
-  <script>// When the user scrolls the page, execute myFunction
-  window.onscroll = function() {myFunction()};
-
-  // Get the navbar
-  var navbar = document.getElementById("nav");
-
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
-    if (window.pageYOffset > 0) {
-      navbar.classList.remove("transparant")
-    } else {
-      navbar.classList.add("transparant");
-    }
-  }
-</script>
-
-
-<script>
-  var string = "Web developer with a strong passion for design";
-  var str = string.split("");
-  var el = document.getElementById('str');
-  (function animate() {
-    str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running);
-    var running = setTimeout(animate, 90);
-  })();
-</script>
-
- 
