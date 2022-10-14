@@ -1,10 +1,4 @@
-require("@rails/activestorage").start()
+import "@hotwired/turbo-rails"
 import "./channels"
 import "./controllers"
-import "@hotwired/turbo-rails"
-
-
-document.addEventListener('turbo:load', () => {
-    Textanimation();
-    scrollNavbar();
-});
+require("@rails/activestorage").start()

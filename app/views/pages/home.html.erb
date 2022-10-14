@@ -25,6 +25,10 @@
         </div>
       </div>
       <%# ABOUT ME %>
+      <div data-controller="password">
+        <input class="text-gray-500" data-action="password#write" type="text">
+        <button data-password-target="button">Greet</button>
+      </div>
       <div class="swiper-slide py-20">
         <h1 class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
           About me
@@ -47,7 +51,7 @@
         <div class="relative">
           <%= image_tag "fillingpieces.png", :size => "100%x800", :class => "hover:scale-105 transition col-start-4 row-start-1 ease-in duration-500" %>
           <%= image_tag "northaction.png", :size => "100%x800", :class => "hover:scale-110 transition col-start-1 row-start-2 ease-in duration-500" %>
-          <%= image_tag "gaiagaia.png", :size => "100%x800", :class => "hover:scale-110 transition col-start-3 row-start-3 ease-in duration-500" %>%
+          <%= image_tag "gaiagaia.png", :size => "100%x800", :class => "hover:scale-110 transition col-start-3 row-start-3 ease-in duration-500" %>
           <%= image_tag "lamptwist.png", :size => "100%x800", :class => "hover:scale-110 transition col-start-2 row-start-4 ease-in duration-500" %>
         </div>
       </div>
