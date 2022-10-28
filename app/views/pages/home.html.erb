@@ -1,64 +1,7 @@
 <div class="bg-zinc-700 font-sora text-white relative w-full h-full">
-  <div class="max-h-screen overflow-y-scroll snap snap-y snap-mandatory">
-    <nav class="py-10 px-64 sticky top-0">
-      <ul class="flex space-x-10 justify-end text-xl">
-        <li class="animated-underline animate-fadeOut2">Home</li>
-        <li class="animated-underline animate-fadeOut3">about</li>
-        <li class="animated-underline animate-fadeOut3">projects</li>
-        <li class="animated-underline animate-fadeOut5">contact</li>
-      </ul>
-    </nav>
-    <%= render 'introduction' %>
-
-    <%# ABOUT ME %>
-    <div class="snap-always snap-start flex flex-col justify-center items-center sticky top-0 min-h-screen w-full h-full py-20 bg-zinc-700">
-      <div class="px-64">
-        <h1 class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
-          About me
-        </h1>
-        <p class="mt-6 text-base text-zinc-200">
-          Last year I started building some shopify webstores when I was in Argentina for my internship at a digital marketing agency. During my internship I discovered how international and local companies launch online marketing campaigns through google and facebook.
-          <br>
-          <br>
-          Through youtube videos, online implementation guides and getting to the bottom of forums, I finally found a solution for every obstacle that arose when building the webshop. My motto is not to stand still, but to take action, even when it's difficult. Trial and error is the best way to learn.
-          <br>
-          <br>
-          I joined Le Wagon to gain a broader knowledge of both back-end and front-end. During this bootcamp I stronged my passion for design. Now, I am looking forward to work as a front-end developer for a company I care about.
-        </p>
-      </div>
-    </div>
-    <%# PROJECTS %>
-    <%# <h1 class="text-4xl mb-6 font-bold tracking-tight text-zinc-100 sm:text-5xl">
-      Projects
-    </h1> %>
-    <div class="snap-always snap-start sticky top-0 min-h-screen w-full h-full  bg-zinc-700">
-      <%= image_tag "fillingpieces.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-4 row-start-1 w-full h-full ease-in duration-500" %>
-    </div>
-    <div class="snap-always snap-start sticky top-0 min-h-screen w-full h-full  bg-zinc-700">
-      <%= image_tag "northaction.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-1 row-start-2 ease-in duration-500" %>
-    </div>
-    <div class="snap-always snap-start sticky top-0 min-h-screen w-full h-full  bg-zinc-700">
-      <%= image_tag "gaiagaia.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-3 row-start-3 ease-in duration-500" %>
-    </div>
-    <div class="snap-always snap-start sticky top-0 min-h-screen w-full h-full  bg-zinc-700">
-      <%= image_tag "lamptwist.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-2 row-start-4 ease-in duration-500" %>
-    </div>
-    <%# Contact %>
-    <div class="snap-always flex flex-col justify-center items-center text-center snap-start sticky top-0 min-h-screen w-full h-full bg-zinc-700">
-      <div class="px-64">
-        <h1 class="text-4xl mb-6 font-bold tracking-tight text-zinc-100 sm:text-5xl">
-          Get in touch
-        </h1>
-        <p class="mb-6 text-base text-zinc-200">
-          Are you looking for a team-player, who learns quickly? Don't hesitate to contact me for any work collaborations, fan letters or even a simple chat. 
-        </p>
-        <a class="" href="mailto:brentvanholder@gmail.com?subject=%20Fan%20Letter%2C%20Work%20Inquiry">
-          <button class="bg-white border text-black px-8 py-4 rounded mb-3">
-            Say Hello!
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
+  <%= render 'navbar' %>
+  <%= render 'introduction' %>
+  <%= render 'aboutme' %>
+  <%= render 'projects' %>
+  <%= render 'contact' %>
 </div>
-
