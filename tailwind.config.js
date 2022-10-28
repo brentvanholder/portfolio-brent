@@ -5,23 +5,28 @@ module.exports = {
         'sora': ['Sora', 'sans-serif']
       },
       keyframes: {
-        fadeIn: {
-          '0%': { transform: 'translateY(-50px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '100' }
+        nav: {
+          '100%': { backgroundColor: 'rgb(255, 255, 255, 1)', opacity: '100' },
+          '0%': {
+            backgroundColor: 'rgb(255, 255, 255, 0)', opacity: '0'
+          }
         },
-        fadeOut: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '100' }
+        textEffect: {
+          '0%': { transform: 'translate3d(0px, 30px, 0px)', opacity: '0' },
+          '100%': { transform: 'translate3d(0px, 0px, 0px)', opacity: '100' }
         },
+        imageEffect: {
+          '0%': { transform: 'translate3d(0px, 120px, 0px)', opacity: '0' },
+          '100%': { transform: 'translate3d(0px, 0, 0px)', opacity: '100' }
+        }
       },
       animation: {
-        'fadein2': 'fadeIn 2s',
-        'fadein3': 'fadeIn 2.1s',
-        'fadein5': 'fadeIn 2.2s',
-        'fadeOut2': 'fadeOut 1.2s',
-        'fadeOut3': 'fadeOut 1.3s',
-        'fadeOut5': 'fadeOut 1.4s'
-      },
+        'navScroll': 'nav 3s',
+        'textFirst': 'textEffect 1s',
+        'textSecond': 'textEffect 1.5s',
+        'textThird': 'textEffect 2s',
+        'translateImage': 'imageEffect 1s'
+      }
     },
   },
   content: [
