@@ -2,18 +2,35 @@
   "name": "portfolio_brent",
   "private": true,
   "dependencies": {
+    "@hotwired/stimulus": "^3.1.0",
+    "@hotwired/turbo-rails": "^7.2.0",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.3.0",
-    "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1",
-    "mapbox-gl": "^1.13.0",
-    "popper.js": "^1.16.1",
-    "turbolinks": "^5.2.0"
+    "autoprefixer": "^10.4.12",
+    "esbuild": "^0.15.10",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
   },
   "version": "0.1.0",
-  "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
-  }
+  "description": "Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "rails server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentvanholder/portfolio-brent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brentvanholder/portfolio-brent/issues"
+  },
+  "homepage": "https://github.com/brentvanholder/portfolio-brent#readme"
 }

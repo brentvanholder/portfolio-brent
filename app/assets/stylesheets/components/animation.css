@@ -1,0 +1,52 @@
+  @media all and (min-width: 1024px) {
+    .animated-underline::after {
+      background-color: #fff;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform .4s cubic-bezier(0.86, 0, 0.07, 1);
+      width: 100%;
+    }
+    
+    .animated-underline:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+  
+  .animated-underline,
+  .animated-underline--active,
+  .paragraph a,
+  .animated-underline--active--no--hover  {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .animated-underline--active::after,
+
+
+  .animated-underline--active:hover::after {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .animated-underline--active--no--hover::after{
+    background-color: fff;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 100%;
+  }
+  
+  .animated-underline--active--no--hover:hover::after {
+    position: block;
+  }

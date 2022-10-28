@@ -1,0 +1,5 @@
+@import 'components/animation';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
