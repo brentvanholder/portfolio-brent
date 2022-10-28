@@ -1,6 +1,6 @@
   @media all and (min-width: 1024px) {
     .animated-underline::after {
-      background-color: #fff;
+      background-color: #000;
       bottom: 0;
       content: '';
       height: 1px;
@@ -8,7 +8,7 @@
       position: absolute;
       transform: scaleX(0);
       transform-origin: bottom right;
-      transition: transform .4s cubic-bezier(0.86, 0, 0.07, 1);
+      transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
       width: 100%;
     }
     
