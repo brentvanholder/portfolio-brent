@@ -1,4 +1,8 @@
-<div class="bg-zinc-700 font-sora text-white relative w-full h-full">
+<div 
+  data-controller="hello" 
+  data-action="scroll@window->hello#layout" 
+  class="bg-white font-sora text-white"
+  >
   <%= render 'navbar' %>
   <%= render 'introduction' %>
   <%= render 'aboutme' %>
