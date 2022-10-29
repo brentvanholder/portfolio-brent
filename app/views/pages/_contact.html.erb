@@ -1,16 +1,43 @@
  <%# Contact %>
-<div class="min-h-screen flex flex-col justify-center items-center text-center w-full h-full">
-  <div class="px-64">
-    <h1 class="text-4xl mb-6 font-bold tracking-tight text-black sm:text-5xl">
-      Get in touch
+<div class="min-h-screen max-w-[1170px] xl:max-w-[1380px] mx-auto flex flex-col justify-center items-center w-full h-full text-black">
+  <div class="px-10" style="font-family: 'Clash Display', sans-serif;">
+    <h1 class="text-[120px] font-semibold mt-5 mb-2.5 leading-[144px]">
+      Let’s work together
     </h1>
-    <p class="mb-6 text-base text-black">
-      Are you looking for a team-player, who learns quickly? Don't hesitate to contact me for any work collaborations, fan letters or even a simple chat. 
-    </p>
-    <a class="" href="mailto:brentvanholder@gmail.com?subject=%20Fan%20Letter%2C%20Work%20Inquiry">
-      <button class="bg-white border text-black px-8 py-4 rounded mb-3">
-        Say Hello!
-      </button>
-    </a>
+    <div class="mb-4">
+      <form class="relative z-1 flex mt-11 flex-row flex-wrap gap-x-2.5 gap-y-8 xl:w-4/5 text-black">
+        <h3>Hello, My Email is</h3>
+        <input 
+          type="email" 
+          class="relative top-[-8px] inline-block cursor-none focus:border-black transition-all duration-300 w-[360px] h-[60px] mx-3 mb-0 pt-5 pr-8 border-[#cecece] bg-transparent text-[35px] appearance-none font-normal leading-[60px] tracking-wider border-b  outline-none" 
+          maxlength="256" 
+          name="Email" 
+          data-name="Email" 
+          placeholder="" 
+          id="Email" 
+          required=""
+        >
+        <h3>I'm writing </h3>
+        <h3>about</h3>
+        <input 
+          type="text" 
+          class="relative top-[-8px] inline-block cursor-none focus:border-black transition-all duration-300 w-[360px] h-[60px] mx-3 mb-0 pt-5 pr-8 border-[#cecece] bg-transparent text-[35px] appearance-none font-normal leading-[60px] tracking-wider border-b outline-none" 
+          maxlength="256" 
+          name="Subject" 
+          data-name="Subject" 
+          placeholder="" 
+          id="Subject" 
+          required=""
+        >
+        <h3>Looking forward to </h3>
+        <h3>talking to you.</h3>
+        <input 
+          type="submit" 
+          value="Send" 
+          data-wait="Please wait..." 
+          class="ml-10 px-4 inline-block text-[50px] text-black font-medium border-none transition-[padding] hover:pr-10 duration-300"
+        >
+      </form>
+    </div>
   </div>
 </div>
