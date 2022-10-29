@@ -1,17 +1,22 @@
 <%# ABOUT ME %>
-<div class="min-h-screen flex flex-col justify-center items-center w-full h-full py-20">
-  <div class="px-64">
-    <h1 class="text-4xl font-bold tracking-tight text-black sm:text-5xl">
+<div class="min-h-screen max-w-[1170px] xl:max-w-[1380px] mx-auto flex flex-col justify-center items-center w-full h-full">
+  <div class="px-10" style="font-family: 'Clash Display', sans-serif;">
+    <h1 class="text-xl text-black">
       About me
     </h1>
-    <p class="mt-6 text-base text-black">
-      Last year I started building some shopify webstores when I was in Argentina for my internship at a digital marketing agency. During my internship I discovered how international and local companies launch online marketing campaigns through google and facebook.
-      <br>
-      <br>
-      Through youtube videos, online implementation guides and getting to the bottom of forums, I finally found a solution for every obstacle that arose when building the webshop. My motto is not to stand still, but to take action, even when it's difficult. Trial and error is the best way to learn.
-      <br>
-      <br>
-      I joined Le Wagon to gain a broader knowledge of both back-end and front-end. During this bootcamp I stronged my passion for design. Now, I am looking forward to work as a front-end developer for a company I care about.
+    <p data-hello-target="about" class="mt-6 text-[50px] font-normal leading-[60px] text-black">
+      Last year I started building some shopify webstores when I was in Argentina for my internship at a digital marketing agency. 
     </p>
   </div>
 </div>
+<style>
+  .transformText {
+    transform: translate3d(0px, 20px, 0px)  scale3d(1, 1, 1) rotateX(0deg) rotateY(50deg) rotateZ(0deg) skew(25deg, 0deg);
+    transform-style: preserve-3d;
+  }
+
+  .normal {
+    transform: translate3d(0px, 0px, 0px)  scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+</style>
