@@ -18,26 +18,6 @@ module.exports = {
         imageEffect: {
           '0%': { transform: 'translate3d(0px, 120px, 0px)', opacity: '0' },
           '100%': { transform: 'translate3d(0px, 0, 0px)', opacity: '100' }
-        },
-        aboutEffect: {
-          '0%': {
-            transform: 'translate3d(0px, 20px, 0px)',
-            scale3d: '(1, 1, 1)',
-            rotateX: '(0deg)',
-            rotateY: '(50deg)',
-            rotateZ: '(0deg)',
-            skew: '(25deg, 0deg)',
-            opacity: '0'
-          },
-          '100%': {
-            transform: 'translate3d(0px, 0px, 0px)',
-            scale3d: '(1, 1, 1)',
-            rotateX: '(0deg)',
-            rotateY: '(0deg)',
-            rotateZ: '(0deg)',
-            skew: '(0deg, 0deg)',
-            opacity: '100'
-          }
         }
       },
       animation: {
@@ -45,8 +25,7 @@ module.exports = {
         'textFirst': 'textEffect 1s',
         'textSecond': 'textEffect 1.5s',
         'textThird': 'textEffect 2s',
-        'translateImage': 'imageEffect 1s',
-        'translateAbout': 'aboutEffect 1s'
+        'translateImage': 'imageEffect 1s'
       }
     },
   },

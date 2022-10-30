@@ -1,15 +1,15 @@
  <%# Contact %>
-<div class="min-h-screen max-w-[1170px] xl:max-w-[1380px] mx-auto flex flex-col justify-center items-center w-full h-full text-black">
-  <div class="px-10" style="font-family: 'Clash Display', sans-serif;">
-    <h1 class="text-[120px] font-semibold mt-5 mb-2.5 leading-[144px]">
+<div class="min-h-screen bg-white relative max-w-[1170px] xl:max-w-[1380px] mx-auto flex flex-col justify-center items-center w-full h-full text-black">
+  <div class="px-4 lg:px-10" style="font-family: 'Clash Display', sans-serif;">
+    <h1 class="text-[48px] leading-[56px] lg:text-[120px] font-semibold mt-5 mb-2.5 lg:leading-[144px]">
       Let’s work together
     </h1>
     <div class="mb-4">
-      <form class="relative z-1 flex mt-11 flex-row flex-wrap gap-x-2.5 gap-y-8 xl:w-4/5 text-black">
+      <form class="relative z-1 flex mt-11 flex-row flex-wrap gap-x-2.5 gap-y-5 lg:gap-y-8 xl:w-4/5 text-black">
         <h3>Hello, My Email is</h3>
         <input 
           type="email" 
-          class="relative top-[-8px] inline-block cursor-none focus:border-black transition-all duration-300 w-[360px] h-[60px] mx-3 mb-0 pt-5 pr-8 border-[#cecece] bg-transparent text-[35px] appearance-none font-normal leading-[60px] tracking-wider border-b  outline-none" 
+          class="relative top-[-20px] left-1 lg:top-[-8px] inline-block cursor-none focus:border-black transition-all duration-300 w-[200px] lg:w-[360px] h-[45px] lg:h-[60px] lg:mx-3 mb-0 pt-5 pr-8 border-[#cecece] bg-transparent text-lg lg:text-[35px] appearance-none font-normal leading-[60px] tracking-wider border-b  outline-none" 
           maxlength="256" 
           name="Email" 
           data-name="Email" 
@@ -21,7 +21,7 @@
         <h3>about</h3>
         <input 
           type="text" 
-          class="relative top-[-8px] inline-block cursor-none focus:border-black transition-all duration-300 w-[360px] h-[60px] mx-3 mb-0 pt-5 pr-8 border-[#cecece] bg-transparent text-[35px] appearance-none font-normal leading-[60px] tracking-wider border-b outline-none" 
+          class="relative top-[-20px] left-1 lg:top-[-8px] inline-block cursor-none focus:border-black transition-all duration-300 w-[200px] lg:w-[360px] h-[45px] lg:h-[60px] lg:mx-3 mb-0 pt-5 pr-8 border-[#cecece] bg-transparent text-lg lg:text-[35px] appearance-none font-normal leading-[60px] tracking-wider border-b outline-none" 
           maxlength="256" 
           name="Subject" 
           data-name="Subject" 
@@ -35,9 +35,15 @@
           type="submit" 
           value="Send" 
           data-wait="Please wait..." 
-          class="ml-10 px-4 inline-block text-[50px] text-black font-medium border-none transition-[padding] hover:pr-10 duration-300"
+          class="hidden lg:ml-10 lg:px-4 lg:inline-block text-[50px] text-black font-medium border-none transition-[padding] hover:pr-10 duration-300"
         >
       </form>
+      <input 
+          type="submit" 
+          value="Send" 
+          data-wait="Please wait..." 
+          class="lg:hidden mt-4 inline-block text-[35px] text-black font-medium border-none transition-[padding] hover:pr-10 duration-300"
+        >
     </div>
   </div>
 </div>

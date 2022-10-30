@@ -1,5 +1,11 @@
-<nav data-hello-target="nav" class="fixed bg-white z-30 inset-0 bottom-auto max-w-[1170px] xl:max-w-[1380px] mx-auto">
-  <div class="flex justify-between py-5 px-10">
+<nav data-hello-target="nav" class="sticky top-0 lg:fixed bg-white z-30 w-full inset-0 bottom-auto max-w-[1170px] xl:max-w-[1380px] mx-auto">
+  <%# MOBILE %>
+  <div class="lg:hidden flex justify-between p-4">
+    <div class="text-[#333] text-xl flex items-center" style="font-family: 'Clash Display', sans-serif;">👋 it's Brent</div>
+    <%= image_tag 'menuicon.svg', :class => 'w-8 h-8' %>
+  </div>
+  <%# DESKTOP %>
+  <div class="hidden lg:flex justify-between py-5 px-10">
     <div class="text-[#333] text-2xl" style="font-family: 'Clash Display', sans-serif;">👋 it's Brent</div>
     <ul class="flex space-x-10 justify-end text-xl text-black">
       <li class="animated-underline">Home</li>
