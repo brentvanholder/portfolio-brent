@@ -1,16 +1,118 @@
  <%# PROJECTS %>
-<%# <h1 class="text-4xl mb-6 font-bold tracking-tight text-zinc-100 sm:text-5xl">
-      Projects
-    </h1> %>
-<div class="w-full h-full min-h-screen bg-white">
-  <%= image_tag "fillingpieces.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-4 row-start-1 w-full h-full min-h-screenease-in duration-500" %>
-</div>
-<div class="w-full h-full min-h-screen bg-white">
-  <%= image_tag "northaction.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-1 row-start-2 ease-in duration-500" %>
-</div>
-<div class="w-full h-full min-h-screen bg-white">
-  <%= image_tag "gaiagaia.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-3 row-start-3 ease-in duration-500" %>
-</div>
-<div class="w-full h-full min-h-screen bg-white">
-  <%= image_tag "lamptwist.png", :size => "100%x800", :class => "hover:scale-105  transition col-start-2 row-start-4 ease-in duration-500" %>
+<div class="max-w-[1170px] xl:max-w-[1380px] mx-auto w-full h-full">
+  <div class="px-10" style="font-family: 'Clash Display', sans-serif;">
+    <h3 class="text-4xl mb-12 text-black font-medium uppercase">
+      / Project highlights
+    </h3>
+    <div class="lg:grid grid-cols-2 gap-4 lg:space-y-0 flex flex-col space-y-4">
+      <%# Filling Pieces MOBILE %>
+      <a href="https://www.fillingpieces.com/" target="_blank" class="bg-[#171717] w-full h-full flex flex-col text-white p-8">
+        <div class="w-full h-3/4 mb-4 relative">
+          <%= image_tag "fillingpiecesThumb.png", :class => "w-full h-full object-cover" %>
+        </div>
+        <div class="grid grid-cols-2 h-1/4 justify-between pt-8 pb-6">
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Industry
+            </div>
+            <span class="text-xl">Fashion</span>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Location
+            </div>
+            <span class="text-xl">Amsterdam</span>
+          </div>
+        </div>
+        <div class="pt-6 space-y-3">
+          <h3>
+            Filling Pieces
+          </h3>
+          <p class="text-xl italic">
+            Bridging the gap
+          </p>
+        </div>
+      </a>
+      <%# Lamptwist MOBILE %>
+      <a href="https://lamptwist.com/en" target="_blank" class="bg-[#171717] w-full h-full flex flex-col text-white p-8">
+        <div class="w-full h-3/4 mb-4 relative">
+          <%= image_tag "lamptwist.jpeg", :class => "w-full h-full object-cover" %>
+        </div>
+        <div class="grid grid-cols-2 h-1/4 justify-between pt-8 pb-6">
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Industry
+            </div>
+            <span class="text-xl">Lamps & Lighting</span>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Location
+            </div>
+            <span class="text-xl">Belgium</span>
+          </div>
+        </div>
+        <div class="pt-6 space-y-3">
+          <h3>
+            Lamptwist
+          </h3>
+          <p class="text-xl italic">
+            Lamps with a story
+          </p>
+        </div>
+      </a>
+      <%# Gaia Gaia MOBILE %>
+      <a href="https://gaia-gaia.com/" target="_blank" class="bg-[#171717] w-full h-full flex flex-col text-white p-8">
+        <div class="w-full h-3/4 mb-4 relative">
+          <%= image_tag "gaiagaia.jpeg", :class => "w-full h-full object-cover" %>
+        </div>
+        <div class="grid grid-cols-2 h-1/4 justify-between pt-8 pb-6">
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Industry
+            </div>
+            <span class="text-xl">Fashion</span>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Location
+            </div>
+            <span class="text-xl">Amsterdam</span>
+          </div>
+        </div>
+        <div class="pt-6 space-y-3">
+          <h3>
+            Gaïa Gaïa
+          </h3>
+          <p class="text-xl italic">
+          </p>
+        </div>
+      </a>
+      <%# North ActionSports group MOBILE %>
+      <a href="https://northasg.com/" target="_blank" class="bg-[#171717] w-full h-full flex flex-col text-white p-8">
+        <div class="w-full h-3/4 mb-4 relative">
+          <%= image_tag "northaction3.jpg", :class => "w-full h-full object-cover" %>
+        </div>
+        <div class="grid grid-cols-2 h-1/4 justify-between pt-8 pb-6">
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Industry
+            </div>
+            <span class="text-xl">Watersport</span>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <div class="uppercase text-sm tracking-widest">
+              Location
+            </div>
+            <span class="text-xl">The Netherlands</span>
+          </div>
+        </div>
+        <div class="pt-6 space-y-3">
+          <h3>
+            North Actionsports Group
+          </h3>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>

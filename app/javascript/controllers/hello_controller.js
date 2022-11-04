@@ -7,17 +7,17 @@ export default class extends Controller {
   }
 
   layout() {
-    const projectOneTop = window.pageYOffset + this.projectOneTarget.getBoundingClientRect().top
-    if (window.scrollY + window.innerHeight > projectOneTop) this.projectOneTarget.classList.add('opacity-100')
+    // const projectOneTop = window.pageYOffset + this.projectOneTarget.getBoundingClientRect().top
+    // if (window.scrollY + window.innerHeight > projectOneTop) this.projectOneTarget.classList.add('opacity-100')
 
-    const projectTwoTop = window.pageYOffset + this.projectTwoTarget.getBoundingClientRect().top
-    if (window.scrollY + window.innerHeight > projectTwoTop) this.projectTwoTarget.classList.add('opacity-100')
+    // const projectTwoTop = window.pageYOffset + this.projectTwoTarget.getBoundingClientRect().top
+    // if (window.scrollY + window.innerHeight > projectTwoTop) this.projectTwoTarget.classList.add('opacity-100')
 
-    const projectThreeTop = window.pageYOffset + this.projectThreeTarget.getBoundingClientRect().top
-    if (window.scrollY + window.innerHeight > projectThreeTop) this.projectThreeTarget.classList.add('opacity-100')
+    // const projectThreeTop = window.pageYOffset + this.projectThreeTarget.getBoundingClientRect().top
+    // if (window.scrollY + window.innerHeight > projectThreeTop) this.projectThreeTarget.classList.add('opacity-100')
 
-    const projectFourTop = window.pageYOffset + this.projectFourTarget.getBoundingClientRect().top
-    if (window.scrollY + window.innerHeight > projectFourTop) this.projectFourTarget.classList.add('opacity-100')
+    // const projectFourTop = window.pageYOffset + this.projectFourTarget.getBoundingClientRect().top
+    // if (window.scrollY + window.innerHeight > projectFourTop) this.projectFourTarget.classList.add('opacity-100')
 
 
 
