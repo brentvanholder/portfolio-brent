@@ -6,13 +6,13 @@
 
 @layer components {
     h3 {
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 32px;
+        line-height: 34px;
     }
     @media (min-width: 1024px) {
         h3 {
-            font-size: 50px;
-            line-height: 60px;
+            font-size: 40px;
+            line-height: 50px;
         }
     }
 }

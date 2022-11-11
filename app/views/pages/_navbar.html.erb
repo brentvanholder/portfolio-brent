@@ -7,11 +7,11 @@
   <%# DESKTOP %>
   <div class="hidden lg:flex justify-between py-5 px-10">
     <div class="text-[#333] text-2xl" style="font-family: 'Clash Display', sans-serif;">👋 it's Brent</div>
-    <ul class="flex space-x-10 justify-end text-xl text-black">
-      <li class="animated-underline">Home</li>
-      <li class="animated-underline">about</li>
-      <li class="animated-underline">projects</li>
-      <li class="animated-underline">contact</li>
-    </ul>
+    <%# <ul class="flex space-x-10 justify-end text-xl text-black">
+      <%= link_to "Home", { anchor: "Home" }, class: "animated-underline" %>
+      <%= link_to "About", { anchor: "About" }, class: "animated-underline" %>
+      <%= link_to "Projects", { anchor: "Projects" }, class: "animated-underline" %>
+      <%= link_to "Contact", { anchor: "Contact" }, class: "animated-underline" %>
+    </ul> %>
   </div>
 </nav>
