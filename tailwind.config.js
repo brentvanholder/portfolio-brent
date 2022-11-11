@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sora': ['Sora', 'sans-serif']
+        'sora': ['Sora', 'sans-serif'],
+        'clash': ['Clash Display', 'sans-serif']
       },
       keyframes: {
         nav: {
